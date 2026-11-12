@@ -1103,7 +1103,8 @@ html:has(.lg-root) body {
     }
     .lg-hero__device {
       position: absolute;
-      left: 60%;
+      /* never closer to the lead than its 34rem column + a gap + the tilted phone's left reach */
+      left: max(60%, calc(37rem + 13rem * var(--lg-float-scale, 1)));
       /* top edge on the baseline of the headline's 2nd line: only descenders are overlapped */
       top: calc(clamp(1.75rem, 4.5svh, 3.25rem) + var(--lg-text-hero) * 1.86);
       margin: 0;
@@ -1119,7 +1120,7 @@ html:has(.lg-root) body {
       padding-bottom: calc(var(--lg-dock-gap) + 0.25rem);
     }
     .lg-hero__device {
-      left: 52%;
+      left: max(52%, calc(37rem + 13rem * var(--lg-float-scale, 1)));
     }
   }
   @media (min-width: 1536px) {

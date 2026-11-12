@@ -11,7 +11,8 @@
       // theme before first paint: saved choice, else the OS setting. Toggle sets localStorage "lg-theme".
       (function () {
         try {
-          var t = localStorage.getItem("lg-theme");
+          var q = new URLSearchParams(location.search).get("theme");
+          var t = q === "light" || q === "dark" ? q : localStorage.getItem("lg-theme");
           if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
           document.documentElement.setAttribute("data-theme", t);
         } catch (e) {}
