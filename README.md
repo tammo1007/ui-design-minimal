@@ -37,7 +37,16 @@ npm run dev        # / landing · /dashboard/ · /styleguide/
 npm run check      # tokens + skill sync + audit + typecheck + build
 ```
 
-### Use it in your project
+### Use it in your project (one command)
+
+```bash
+npx skills add tammo1007/liquid-glass-design-system      # the agent skill, with DESIGN.md, AGENTS.md and specs as references
+node .claude/skills/liquid-glass-design-system/scripts/install.mjs   # copies all 49 system files into your project
+```
+
+The installer writes `src/styles/*`, `src/components/lg/*`, `src/lib/cn.ts`, `DESIGN.md`, `AGENTS.md`, `docs/COMPONENTS.md`, `tokens/tokens.json`, `scripts/lg-audit.mjs`, a `src/styles/liquid-glass.css` entry and an `audit` npm script. It never overwrites existing files unless you pass `--force`, and prints the three remaining steps (npm install, one CSS import, the `@/` alias).
+
+### Or by hand
 
 1. Copy `src/styles/`, `src/components/lg/` and `src/lib/cn.ts` into your React + Tailwind v4 project.
 2. `npm i motion lenis clsx tailwind-merge class-variance-authority @radix-ui/react-slot @heroicons/react @fontsource-variable/inter`

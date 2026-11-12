@@ -10,7 +10,7 @@ metadata:
 
 # Liquid Glass Design System
 
-Apple-like design system by Tammo Elsner. Full rules: `references/DESIGN.md` (tokens in the front matter). Component specs: `references/COMPONENTS.md`.
+Apple-like design system by Tammo Elsner. Full rules: `references/DESIGN.md` (tokens in the front matter). Build rules and Definition of Done: `references/AGENTS.md`. Component specs: `references/COMPONENTS.md`. Installer: `scripts/install.mjs`.
 
 ## When to use
 
@@ -20,11 +20,16 @@ Apple-like design system by Tammo Elsner. Full rules: `references/DESIGN.md` (to
 
 ## Setup (once per project)
 
-1. Get the system: `npx degit tammo1007/liquid-glass-design-system/src lg-tmp` then copy `lg-tmp/styles`, `lg-tmp/components/lg`, `lg-tmp/lib/cn.ts` into the project's `src/`. Or clone the repo as a starter.
+1. From the project root run the installer that ships with this skill (no dependencies, Node 18+):
+   `node <this-skill-folder>/scripts/install.mjs`
+   (e.g. `node .claude/skills/liquid-glass-design-system/scripts/install.mjs`). It downloads every required file from GitHub into the project: `src/styles/lg-*.css`, `src/components/lg/*`, `src/lib/cn.ts`, `DESIGN.md`, `AGENTS.md`, `docs/COMPONENTS.md`, `tokens/tokens.json`, `scripts/lg-audit.mjs`, plus `src/styles/liquid-glass.css` and an `audit` npm script. Existing files are kept unless you pass `--force`.
 2. `npm i motion lenis clsx tailwind-merge class-variance-authority @radix-ui/react-slot @heroicons/react @fontsource-variable/inter`
-3. Main CSS order: `@import "tailwindcss"; @import "@fontsource-variable/inter"; @import "./styles/lg-tokens.css"; @import "./styles/lg-tailwind.css"; @import "./styles/lg-product.css"; @import "./styles/lg-scroll.css";`
-4. Alias `@/*` → `src/*`. Wrap the app in `<SmoothScroll>`. Put `DESIGN.md` and `AGENTS.md` in the project root so later edits follow them.
-5. Theme: `data-theme="light|dark"` on `<html>` before first paint.
+3. In the main CSS file, right after `@import "tailwindcss";`, add `@import "./styles/liquid-glass.css";` (path relative to that file). Tailwind CSS v4 is required.
+4. The alias `@/*` must point to `src/*` (tsconfig `paths` + vite `resolve.alias`; Lovable and shadcn projects already have it).
+5. Wrap the app in `<SmoothScroll>` from `@/components/lg`. Set `data-theme="light"` or `"dark"` on `<html>` before first paint.
+6. From now on follow the project's `DESIGN.md` and `AGENTS.md` (copies are in `references/` if the project has none yet).
+
+No network? Read `references/DESIGN.md`, `references/AGENTS.md` and `references/COMPONENTS.md`; they contain every token and rule, so the look can be rebuilt by hand.
 
 ## Workflow
 
