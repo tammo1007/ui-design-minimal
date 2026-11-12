@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Dashboard · Liquid Glass Design System</title>
+    <meta name="description" content="Product density demo: a Liquid Glass dashboard built only from system components." />
+    <meta name="author" content="Tammo Elsner" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script>
+      // theme before first paint: saved choice, else the OS setting. Toggle sets localStorage "lg-theme".
+      (function () {
+        try {
+          var t = localStorage.getItem("lg-theme");
+          if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/demo/dashboard/main.tsx"></script>
+  </body>
+</html>

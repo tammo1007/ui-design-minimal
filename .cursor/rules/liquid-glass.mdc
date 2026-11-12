@@ -1,0 +1,15 @@
+---
+description: Liquid Glass Design System rules (tokens, glass, two type scales, scroll budget)
+globs: ["src/**/*.tsx", "src/**/*.ts", "src/**/*.css"]
+alwaysApply: true
+---
+Follow DESIGN.md and AGENTS.md in the project root for every UI change.
+
+- Build only from `@/components/lg` and token classes. No hex, no palette colors, no arbitrary values, no default text sizes or radii.
+- Glass (Liquid Glass) only on navigation and controls. Content cards are solid. Never glass on glass.
+- Monochrome chrome, one accent. One prominent button per view, on the trailing side.
+- Marketing pages: text-hero/display/h1..h4/lead/body/small/label/caption/stat. Product pages inside AppShell: text-ui-* only.
+- Two-tone, left-aligned section headers (title + titleMuted). Headings 500 (marketing), 600 (product). Never bold, never ALL CAPS.
+- Every landing page has one CardRail. Max 3 pinned scroll sections, not first, not adjacent.
+- Icons: Heroicons via `Icons` from `@/components/lg`. No emoji, no sparkles.
+- Check 390 px and 1440 px, light and dark. Run `npm run audit`.

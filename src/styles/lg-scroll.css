@@ -1,0 +1,45 @@
+/* ============================================================================
+   LIQUID GLASS DESIGN SYSTEM: scroll sections (showpieces)
+   Pinned sections are a tall track (n x 100svh) with a sticky 100svh stage inside.
+   All of them render a calm static layout with prefers-reduced-motion.
+   ============================================================================ */
+@layer components {
+  .lg-pin {
+    position: relative;
+  }
+  .lg-pin__stage {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: clip;
+  }
+  .lg-pin__stage--nav {
+    top: var(--lg-nav-offset);
+    height: calc(100svh - var(--lg-nav-offset));
+  }
+  .lg-stack__card {
+    position: sticky;
+    top: calc(var(--lg-nav-offset) + 1.5rem + var(--lg-stack-i, 0) * 0.75rem);
+    transform-origin: 50% 0%;
+  }
+  .lg-reveal-word {
+    transition: color 120ms linear;
+  }
+  .lg-zoom-text {
+    font-size: clamp(4rem, 2rem + 14vw, 16rem);
+    line-height: 0.86;
+    letter-spacing: -0.06em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .lg-pin__stage {
+      position: relative;
+      height: auto;
+    }
+    .lg-stack__card {
+      position: relative;
+      top: 0;
+    }
+  }
+}

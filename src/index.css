@@ -1,0 +1,9 @@
+/* Liquid Glass Design System: entry stylesheet (copy this order into your project) */
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "./styles/lg-tokens.css";
+@import "./styles/lg-tailwind.css";
+@import "./styles/lg-product.css";
+@import "./styles/lg-scroll.css";
+
+@source "./";

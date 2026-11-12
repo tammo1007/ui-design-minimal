@@ -1,0 +1,14 @@
+# Liquid Glass Design System
+
+> Apple-like Liquid Glass design system for landing pages and product UI (dashboards, apps). React + Tailwind v4. Tokens, components, scroll showpieces and rules written so AI coding agents follow them exactly. By Tammo Elsner (https://www.linkedin.com/in/tammo-elsner-682998186/). MIT.
+
+## Docs
+- [DESIGN.md](https://github.com/tammo1007/liquid-glass-design-system/blob/main/DESIGN.md): all tokens (front matter) and rules: colors, typography (marketing and product scales), layout, elevation, Liquid Glass, shapes, components, motion, recipes, accessibility, do's and don'ts
+- [AGENTS.md](https://github.com/tammo1007/liquid-glass-design-system/blob/main/AGENTS.md): install, file map, how to build marketing and product pages, Definition of Done, never list
+- [docs/COMPONENTS.md](https://github.com/tammo1007/liquid-glass-design-system/blob/main/docs/COMPONENTS.md): exact specs of every component
+- [tokens/tokens.json](https://github.com/tammo1007/liquid-glass-design-system/blob/main/tokens/tokens.json): W3C Design Tokens (2025.10)
+
+## Code
+- [src/styles](https://github.com/tammo1007/liquid-glass-design-system/tree/main/src/styles): lg-tokens.css, lg-tailwind.css, lg-product.css, lg-scroll.css
+- [src/components/lg](https://github.com/tammo1007/liquid-glass-design-system/tree/main/src/components/lg): primitives, barrel `@/components/lg`
+- [skill](https://github.com/tammo1007/liquid-glass-design-system/tree/main/skill/liquid-glass-design-system): Claude / agent skill

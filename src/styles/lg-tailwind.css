@@ -1,0 +1,239 @@
+/* ============================================================================
+   Liquid Glass Design System: Tailwind v4 mapping
+   Use INSTEAD of tailwind.config.ts when the project has `@import "tailwindcss";`.
+
+   src/index.css order:
+     @import "tailwindcss";
+     @import "@fontsource-variable/inter";
+     @import "./styles/lg-tokens.css";
+     @import "./styles/lg-tailwind.css";
+     @import "./styles/lg-product.css";
+     @import "./styles/lg-scroll.css";
+     @import "./styles/lg-shadcn-bridge.css";   (only in projects that also use shadcn/ui)
+   ============================================================================ */
+
+@theme inline {
+  --color-canvas: rgb(var(--lg-canvas));
+  --color-canvas-subtle: rgb(var(--lg-canvas-subtle));
+  --color-surface: rgb(var(--lg-surface));
+  --color-surface-2: rgb(var(--lg-surface-2));
+  --color-surface-3: rgb(var(--lg-surface-3));
+  --color-ink: rgb(var(--lg-ink));
+  --color-ink-2: rgb(var(--lg-ink-2));
+  --color-ink-3: rgb(var(--lg-ink-3));
+  --color-ink-4: rgb(var(--lg-ink-4));
+  --color-accent: rgb(var(--lg-accent));
+  --color-accent-strong: rgb(var(--lg-accent-strong));
+  --color-accent-fill: rgb(var(--lg-accent-fill));
+  --color-accent-ink: rgb(var(--lg-accent-ink));
+  --color-success: rgb(var(--lg-success));
+  --color-success-text: rgb(var(--lg-success-text));
+  --color-warning: rgb(var(--lg-warning));
+  --color-warning-text: rgb(var(--lg-warning-text));
+  --color-danger: rgb(var(--lg-danger));
+  --color-danger-text: rgb(var(--lg-danger-text));
+  --color-info: rgb(var(--lg-info));
+  --color-info-text: rgb(var(--lg-info-text));
+  --color-chart-1: rgb(var(--lg-chart-1));
+  --color-chart-2: rgb(var(--lg-chart-2));
+  --color-chart-3: rgb(var(--lg-chart-3));
+  --color-chart-4: rgb(var(--lg-chart-4));
+  --color-chart-5: rgb(var(--lg-chart-5));
+  --color-chart-6: rgb(var(--lg-chart-6));
+  --color-chart-grid: var(--lg-chart-grid);
+  --color-hairline: var(--lg-hairline);
+  --color-hairline-strong: var(--lg-hairline-strong);
+  --color-scrim: var(--lg-scrim);
+
+  --font-sans: var(--lg-font-sans);
+  --font-mono: var(--lg-font-mono);
+
+  --text-hero: var(--lg-text-hero);
+  --text-hero--line-height: var(--lg-lh-hero);
+  --text-hero--letter-spacing: var(--lg-ls-hero);
+  --text-hero--font-weight: 500;
+  --text-display: var(--lg-text-display);
+  --text-display--line-height: var(--lg-lh-display);
+  --text-display--letter-spacing: var(--lg-ls-display);
+  --text-display--font-weight: 500;
+  --text-h1: var(--lg-text-h1);
+  --text-h1--line-height: var(--lg-lh-h1);
+  --text-h1--letter-spacing: var(--lg-ls-h1);
+  --text-h1--font-weight: 500;
+  --text-h2: var(--lg-text-h2);
+  --text-h2--line-height: var(--lg-lh-h2);
+  --text-h2--letter-spacing: var(--lg-ls-h2);
+  --text-h2--font-weight: 500;
+  --text-h3: var(--lg-text-h3);
+  --text-h3--line-height: var(--lg-lh-h3);
+  --text-h3--letter-spacing: var(--lg-ls-h3);
+  --text-h3--font-weight: 500;
+  --text-h4: var(--lg-text-h4);
+  --text-h4--line-height: var(--lg-lh-h4);
+  --text-h4--letter-spacing: var(--lg-ls-h4);
+  --text-h4--font-weight: 500;
+  --text-lead: var(--lg-text-lead);
+  --text-lead--line-height: var(--lg-lh-lead);
+  --text-lead--letter-spacing: var(--lg-ls-lead);
+  --text-body: var(--lg-text-body);
+  --text-body--line-height: var(--lg-lh-body);
+  --text-body--letter-spacing: var(--lg-ls-body);
+  --text-small: var(--lg-text-small);
+  --text-small--line-height: var(--lg-lh-small);
+  --text-small--letter-spacing: var(--lg-ls-small);
+  --text-caption: var(--lg-text-caption);
+  --text-caption--line-height: var(--lg-lh-caption);
+  --text-caption--letter-spacing: var(--lg-ls-caption);
+  --text-label: var(--lg-text-label);
+  --text-label--line-height: var(--lg-lh-label);
+  --text-label--letter-spacing: var(--lg-ls-label);
+  --text-label--font-weight: 500;
+  --text-stat: var(--lg-text-stat);
+  --text-stat--line-height: var(--lg-lh-stat);
+  --text-stat--letter-spacing: var(--lg-ls-stat);
+  --text-stat--font-weight: 300;
+
+  --text-ui-large-title: var(--lg-ui-large-title);
+  --text-ui-large-title--line-height: var(--lg-ui-large-title-lh);
+  --text-ui-large-title--letter-spacing: var(--lg-ui-large-title-ls);
+  --text-ui-large-title--font-weight: 600;
+  --text-ui-title-1: var(--lg-ui-title-1);
+  --text-ui-title-1--line-height: var(--lg-ui-title-1-lh);
+  --text-ui-title-1--letter-spacing: var(--lg-ui-title-1-ls);
+  --text-ui-title-1--font-weight: 600;
+  --text-ui-title-2: var(--lg-ui-title-2);
+  --text-ui-title-2--line-height: var(--lg-ui-title-2-lh);
+  --text-ui-title-2--letter-spacing: var(--lg-ui-title-2-ls);
+  --text-ui-title-2--font-weight: 600;
+  --text-ui-title-3: var(--lg-ui-title-3);
+  --text-ui-title-3--line-height: var(--lg-ui-title-3-lh);
+  --text-ui-title-3--letter-spacing: var(--lg-ui-title-3-ls);
+  --text-ui-title-3--font-weight: 600;
+  --text-ui-headline: var(--lg-ui-headline);
+  --text-ui-headline--line-height: var(--lg-ui-headline-lh);
+  --text-ui-headline--letter-spacing: var(--lg-ui-headline-ls);
+  --text-ui-headline--font-weight: 600;
+  --text-ui-body: var(--lg-ui-body);
+  --text-ui-body--line-height: var(--lg-ui-body-lh);
+  --text-ui-body--letter-spacing: var(--lg-ui-body-ls);
+  --text-ui-body--font-weight: 400;
+  --text-ui-callout: var(--lg-ui-callout);
+  --text-ui-callout--line-height: var(--lg-ui-callout-lh);
+  --text-ui-callout--letter-spacing: var(--lg-ui-callout-ls);
+  --text-ui-callout--font-weight: 400;
+  --text-ui-subhead: var(--lg-ui-subhead);
+  --text-ui-subhead--line-height: var(--lg-ui-subhead-lh);
+  --text-ui-subhead--letter-spacing: var(--lg-ui-subhead-ls);
+  --text-ui-subhead--font-weight: 500;
+  --text-ui-caption: var(--lg-ui-caption);
+  --text-ui-caption--line-height: var(--lg-ui-caption-lh);
+  --text-ui-caption--letter-spacing: var(--lg-ui-caption-ls);
+  --text-ui-caption--font-weight: 500;
+  --text-ui-metric: var(--lg-ui-metric);
+  --text-ui-metric--line-height: var(--lg-ui-metric-lh);
+  --text-ui-metric--letter-spacing: var(--lg-ui-metric-ls);
+  --text-ui-metric--font-weight: 500;
+  --text-ui-metric-lg: var(--lg-ui-metric-lg);
+  --text-ui-metric-lg--line-height: var(--lg-ui-metric-lg-lh);
+  --text-ui-metric-lg--letter-spacing: var(--lg-ui-metric-lg-ls);
+  --text-ui-metric-lg--font-weight: 500;
+
+  --spacing-control-xs: var(--lg-control-xs);
+  --spacing-control-sm: var(--lg-control-sm);
+  --spacing-control-md: var(--lg-control-md);
+  --spacing-control-lg: var(--lg-control-lg);
+  --spacing-row-compact: var(--lg-row-compact);
+  --spacing-row: var(--lg-row);
+  --spacing-row-comfy: var(--lg-row-comfy);
+  --spacing-sidebar: var(--lg-sidebar-w);
+  --spacing-sidebar-collapsed: var(--lg-sidebar-w-collapsed);
+  --spacing-inspector: var(--lg-inspector-w);
+  --spacing-toolbar: var(--lg-toolbar-h);
+  --spacing-app: var(--lg-app-pad);
+  --spacing-app-gap: var(--lg-app-gap);
+  --spacing-app-inset: var(--lg-app-inset);
+  --spacing-card-ui: var(--lg-card-pad-ui);
+  --spacing-icon-sm: var(--lg-icon-sm);
+  --spacing-icon-md: var(--lg-icon-md);
+  --spacing-icon-lg: var(--lg-icon-lg);
+  --spacing-gutter: var(--lg-gutter);
+  --spacing-section: var(--lg-section-y);
+  --spacing-section-sm: var(--lg-section-y-sm);
+  --spacing-section-lg: var(--lg-section-y-lg);
+  --spacing-header: var(--lg-header-gap);
+  --spacing-grid: var(--lg-grid-gap);
+  --spacing-card: var(--lg-card-pad);
+  --spacing-stage: var(--lg-stage-pad);
+  --spacing-nav: var(--lg-nav-offset);
+
+  --container-text: var(--lg-w-text);
+  --container-content: var(--lg-w-content);
+  --container-wide: var(--lg-w-wide);
+  --container-heading: var(--lg-measure-heading);
+  --container-measure: var(--lg-measure-body);
+
+  --radius-chip: var(--lg-r-chip);
+  --radius-control: var(--lg-r-control);
+  --radius-card: var(--lg-r-card);
+  --radius-panel: var(--lg-r-panel);
+  --radius-pill: var(--lg-r-pill);
+  --radius-ui-control: var(--lg-r-ui-control);
+  --radius-ui-card: var(--lg-r-ui-card);
+  --radius-ui-panel: var(--lg-r-ui-panel);
+  --radius-ui-window: var(--lg-r-ui-window);
+
+  --shadow-elev-1: var(--lg-shadow-1);
+  --shadow-elev-2: var(--lg-shadow-2);
+  --shadow-elev-3: var(--lg-shadow-3);
+  --shadow-elev-device: var(--lg-shadow-device);
+  --shadow-glass: var(--lg-glass-shadow);
+  --shadow-hairline: 0 0 0 1px var(--lg-hairline);
+
+  --ease-lg-out: var(--lg-ease-out);
+  --ease-lg-in-out: var(--lg-ease-in-out);
+  --ease-lg-spring: var(--lg-ease-spring);
+  --ease-lg-spring-soft: var(--lg-ease-spring-soft);
+}
+
+@utility duration-press {
+  transition-duration: var(--lg-dur-press);
+}
+@utility duration-fast {
+  transition-duration: var(--lg-dur-fast);
+}
+@utility duration-base {
+  transition-duration: var(--lg-dur-base);
+}
+@utility duration-slow {
+  transition-duration: var(--lg-dur-slow);
+}
+@utility duration-reveal {
+  transition-duration: var(--lg-dur-reveal);
+}
+@utility z-raised {
+  z-index: var(--lg-z-raised);
+}
+@utility z-sticky {
+  z-index: var(--lg-z-sticky);
+}
+@utility z-nav {
+  z-index: var(--lg-z-nav);
+}
+@utility z-overlay {
+  z-index: var(--lg-z-overlay);
+}
+@utility z-modal {
+  z-index: var(--lg-z-modal);
+}
+@utility z-sheet {
+  z-index: var(--lg-z-modal);
+}
+@utility z-popover {
+  z-index: var(--lg-z-popover);
+}
+@utility z-toast {
+  z-index: var(--lg-z-toast);
+}
+@utility z-tooltip {
+  z-index: var(--lg-z-tooltip);
+}
