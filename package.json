@@ -1,7 +1,7 @@
 {
-  "name": "liquid-glass-design-system",
+  "name": "ui-design-minimal",
   "version": "1.0.0",
-  "description": "Apple-like Liquid Glass design system for landing pages and product UI, written so AI coding agents follow it exactly.",
+  "description": "Apple-like minimal design system with Liquid Glass controls for landing pages and product UI, written so AI coding agents follow it exactly.",
   "author": "Tammo Elsner (https://www.linkedin.com/in/tammo-elsner-682998186/)",
   "license": "MIT",
   "private": false,

@@ -1,10 +1,10 @@
 ---
-name: Liquid Glass Design System
+name: UI Design Minimal
 version: 1.0.0
-description: Apple-like, super clean Liquid Glass design system for landing pages and product UI (dashboards, apps, admin). Monochrome chrome, one accent, glass only on navigation and controls, two type scales, scroll showpieces.
+description: Apple-like, super clean minimal design system with Liquid Glass controls for landing pages and product UI (dashboards, apps, admin). Monochrome chrome, one accent, glass only on navigation and controls, two type scales, scroll showpieces.
 author: Tammo Elsner (https://www.linkedin.com/in/tammo-elsner-682998186/)
 license: MIT
-source: https://github.com/tammo1007/liquid-glass-design-system
+source: https://github.com/tammo1007/ui-design-minimal
 based_on: Apple Human Interface Guidelines (Materials, Color, Typography, Layout, Accessibility, Liquid Glass), public guidance only
 stack: React 18/19, Tailwind CSS v4, motion, lenis, Heroicons
 colors:
@@ -142,7 +142,9 @@ components:
   rail-card: { width: "clamp(280px, 14rem + 9vw, 368px)", ratio: "4:5", radius: 24px, tones: [sky, mist, sand, slate, ink, clay] }
 ---
 
-# Liquid Glass Design System
+# UI Design Minimal
+
+An Apple-like, minimal design system: monochrome chrome, one accent, two type scales and Liquid Glass reserved for navigation and controls.
 
 Made by [Tammo Elsner](https://www.linkedin.com/in/tammo-elsner-682998186/). MIT license.
 

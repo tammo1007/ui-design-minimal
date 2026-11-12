@@ -1,14 +1,14 @@
 ---
-name: liquid-glass-design-system
-description: Build Apple-like, super clean Liquid Glass landing pages and product UI (dashboards, apps, admin, settings) in React + Tailwind v4. Use when the user wants an Apple / Liquid Glass / minimal premium look, a landing page with scroll showpieces, or a dashboard that feels like a macOS app. Covers tokens, two type scales, glass rules, components, scroll sections and an audit.
+name: ui-design-minimal
+description: Build Apple-like, super clean minimal landing pages and product UI (dashboards, apps, admin, settings) with Liquid Glass controls in React + Tailwind v4. Use when the user wants an Apple / Liquid Glass / minimal premium look, a landing page with scroll showpieces, or a dashboard that feels like a macOS app. Covers tokens, two type scales, glass rules, components, scroll sections and an audit.
 license: MIT
 metadata:
   author: Tammo Elsner (https://www.linkedin.com/in/tammo-elsner-682998186/)
-  source: https://github.com/tammo1007/liquid-glass-design-system
+  source: https://github.com/tammo1007/ui-design-minimal
   version: 1.0.0
 ---
 
-# Liquid Glass Design System
+# UI Design Minimal
 
 Apple-like design system by Tammo Elsner. Full rules: `references/DESIGN.md` (tokens in the front matter). Build rules and Definition of Done: `references/AGENTS.md`. Component specs: `references/COMPONENTS.md`. Installer: `scripts/install.mjs`.
 
@@ -20,9 +20,13 @@ Apple-like design system by Tammo Elsner. Full rules: `references/DESIGN.md` (to
 
 ## Setup (once per project)
 
+The system needs ALL of its parts in the project: the 4 CSS files in `src/styles/`, the components in `src/components/lg/`, `src/lib/cn.ts`, plus `DESIGN.md`, `AGENTS.md` and `docs/COMPONENTS.md`. The references in this skill describe the rules, but the look comes from the CSS and components. Never build the look from the references alone when the files can be installed.
+
+Alternative to the installer: download everything as a ZIP from https://github.com/tammo1007/ui-design-minimal/archive/refs/heads/main.zip and copy those folders.
+
 1. From the project root run the installer that ships with this skill (no dependencies, Node 18+):
    `node <this-skill-folder>/scripts/install.mjs`
-   (e.g. `node .claude/skills/liquid-glass-design-system/scripts/install.mjs`). It downloads every required file from GitHub into the project: `src/styles/lg-*.css`, `src/components/lg/*`, `src/lib/cn.ts`, `DESIGN.md`, `AGENTS.md`, `docs/COMPONENTS.md`, `tokens/tokens.json`, `scripts/lg-audit.mjs`, plus `src/styles/liquid-glass.css` and an `audit` npm script. Existing files are kept unless you pass `--force`.
+   (e.g. `node .claude/skills/ui-design-minimal/scripts/install.mjs`). It downloads every required file from GitHub into the project: `src/styles/lg-*.css`, `src/components/lg/*`, `src/lib/cn.ts`, `DESIGN.md`, `AGENTS.md`, `docs/COMPONENTS.md`, `tokens/tokens.json`, `scripts/lg-audit.mjs`, plus `src/styles/liquid-glass.css` and an `audit` npm script. Existing files are kept unless you pass `--force`.
 2. `npm i motion lenis clsx tailwind-merge class-variance-authority @radix-ui/react-slot @heroicons/react @fontsource-variable/inter`
 3. In the main CSS file, right after `@import "tailwindcss";`, add `@import "./styles/liquid-glass.css";` (path relative to that file). Tailwind CSS v4 is required.
 4. The alias `@/*` must point to `src/*` (tsconfig `paths` + vite `resolve.alias`; Lovable and shadcn projects already have it).

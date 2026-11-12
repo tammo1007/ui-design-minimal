@@ -1,4 +1,4 @@
-/* Liquid Glass Design System: entry stylesheet (copy this order into your project) */
+/* UI Design Minimal: entry stylesheet (copy this order into your project) */
 @import "tailwindcss";
 @import "@fontsource-variable/inter";
 @import "./styles/lg-tokens.css";

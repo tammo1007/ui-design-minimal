@@ -83,7 +83,7 @@ const duration = Object.fromEntries(Object.entries(shared).filter(([k]) => /^dur
 
 const tokens = {
   $schema: "https://www.designtokens.org/schemas/2025.10/format.json",
-  $description: "Liquid Glass Design System by Tammo Elsner (https://www.linkedin.com/in/tammo-elsner-682998186/). MIT. Generated from src/styles/lg-tokens.css. Do not edit by hand.",
+  $description: "UI Design Minimal by Tammo Elsner (https://www.linkedin.com/in/tammo-elsner-682998186/). MIT. Generated from src/styles/lg-tokens.css. Do not edit by hand.",
   font: {
     sans: { $type: "fontFamily", $value: ["-apple-system", "BlinkMacSystemFont", "SF Pro Text", "SF Pro Display", "Inter Variable", "Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"] },
     mono: { $type: "fontFamily", $value: ["ui-monospace", "SF Mono", "SFMono-Regular", "Menlo", "Consolas", "monospace"] },

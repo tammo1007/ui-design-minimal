@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This project uses the Liquid Glass Design System (by Tammo Elsner, MIT).
+This project uses UI Design Minimal (by Tammo Elsner, MIT).
 
 Before any UI change:
 1. Read `DESIGN.md` (tokens and rules) and `AGENTS.md` (how to build, Definition of Done).

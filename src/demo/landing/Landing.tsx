@@ -64,9 +64,9 @@ export function Landing() {
           <Aurora />
           <Container size="wide" className="lg-hero__inner">
             <div className="lg-hero__top flex items-start justify-between gap-6">
-              <h1 className="text-hero" aria-label="Liquid Glass, written for agents.">
+              <h1 className="text-hero" aria-label="Minimal by design, written for agents.">
                 <span className="lg-hero-in block" style={{ "--lg-hero-i": 0 } as React.CSSProperties}>
-                  Liquid Glass,
+                  Minimal by design,
                 </span>
                 <span className="lg-hero-in block text-ink-2" style={{ "--lg-hero-i": 1 } as React.CSSProperties}>
                   written for <span className="lg-hero-mark"><LogoMark className="size-full" /></span>agents.

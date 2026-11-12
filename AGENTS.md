@@ -1,6 +1,6 @@
-# AGENTS.md: how to build with the Liquid Glass Design System
+# AGENTS.md: how to build with UI Design Minimal
 
-Liquid Glass Design System by [Tammo Elsner](https://www.linkedin.com/in/tammo-elsner-682998186/), MIT. Read this file before every change. The visual rules are in `DESIGN.md`; exact component specs in `docs/COMPONENTS.md`.
+UI Design Minimal by [Tammo Elsner](https://www.linkedin.com/in/tammo-elsner-682998186/), MIT. Read this file before every change. The visual rules are in `DESIGN.md`; exact component specs in `docs/COMPONENTS.md`.
 
 ## Golden rule
 
@@ -8,7 +8,7 @@ The design system (`src/styles/lg-*.css`, `src/components/lg/*`, `src/lib/cn.ts`
 
 ## Install into an existing React + Tailwind v4 project
 
-Fastest: `npx skills add tammo1007/liquid-glass-design-system`, then `node .claude/skills/liquid-glass-design-system/scripts/install.mjs` (adapt the folder to your agent). It copies every file below and prints the remaining steps. By hand:
+Fastest: `npx skills add tammo1007/ui-design-minimal`, then `node .claude/skills/ui-design-minimal/scripts/install.mjs` (adapt the folder to your agent). It copies every file below and prints the remaining steps. By hand:
 
 1. Copy `src/styles/` (lg-tokens.css, lg-tailwind.css, lg-product.css, lg-scroll.css), `src/components/lg/` and `src/lib/cn.ts`.
 2. `npm i motion lenis clsx tailwind-merge class-variance-authority @radix-ui/react-slot @heroicons/react @fontsource-variable/inter`

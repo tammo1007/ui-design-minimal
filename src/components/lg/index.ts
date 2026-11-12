@@ -1,5 +1,5 @@
 /**
- * Liquid Glass Design System: barrel. Import everything from "@/components/lg".
+ * UI Design Minimal: barrel. Import everything from "@/components/lg".
  * Pages import ONLY from "@/components/lg" (plus shadcn/ui if the project has it).
  * Need something new? Build it here first, add it to /styleguide, document it in docs/DESIGN_SYSTEM.md.
  */

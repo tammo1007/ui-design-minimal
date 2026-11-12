@@ -1,5 +1,5 @@
 ---
-description: Liquid Glass Design System rules (tokens, glass, two type scales, scroll budget)
+description: UI Design Minimal rules (tokens, glass, two type scales, scroll budget)
 globs: ["src/**/*.tsx", "src/**/*.ts", "src/**/*.css"]
 alwaysApply: true
 ---

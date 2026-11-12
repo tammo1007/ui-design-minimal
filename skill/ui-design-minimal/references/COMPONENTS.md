@@ -1,6 +1,6 @@
 # Component specs
 
-Exact values for every primitive in `src/components/lg`. Sizes are given at 390 px (phone) and 1440 px (desktop) where they differ. Rules for when to use what live in `DESIGN.md`. Part of the Liquid Glass Design System by [Tammo Elsner](https://www.linkedin.com/in/tammo-elsner-682998186/).
+Exact values for every primitive in `src/components/lg`. Sizes are given at 390 px (phone) and 1440 px (desktop) where they differ. Rules for when to use what live in `DESIGN.md`. Part of UI Design Minimal by [Tammo Elsner](https://www.linkedin.com/in/tammo-elsner-682998186/).
 
 ## Page structure
 

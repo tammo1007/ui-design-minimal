@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * lg-audit: static check for the Liquid Glass Design System (by Tammo Elsner, MIT).
+ * lg-audit: static check for UI Design Minimal (by Tammo Elsner, MIT).
  * Usage:  node scripts/lg-audit.mjs [srcDir] [--legacy]      (exit 1 on errors)
  * Checked: every file that imports "@/components/lg" or lives in src/pages, src/app, src/routes, src/demo.
  * Exempt: src/components/lg, src/components/ui, src/styles, src/lib (the only places raw values may live).

@@ -253,7 +253,7 @@ function DashboardPage() {
         </section>
 
         <p className="pt-2 text-center text-ui-subhead text-ink-3">
-          Liquid Glass Design System by{" "}
+          UI Design Minimal by{" "}
           <SmartLink href={site.author.linkedin} target="_blank" className="text-ink-2 underline decoration-hairline-strong underline-offset-2">
             {site.author.name}
           </SmartLink>{" "}

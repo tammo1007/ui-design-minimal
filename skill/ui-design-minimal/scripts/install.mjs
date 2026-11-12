@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Liquid Glass Design System installer (by Tammo Elsner, MIT).
+ * UI Design Minimal installer (by Tammo Elsner, MIT).
  * Copies every file the system needs into the current project, straight from GitHub:
  *   styles, components, cn(), DESIGN.md, AGENTS.md, docs/COMPONENTS.md, tokens.json, the audit script.
  *
@@ -14,7 +14,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const REPO = "tammo1007/liquid-glass-design-system";
+const REPO = "tammo1007/ui-design-minimal";
 const args = process.argv.slice(2);
 const force = args.includes("--force");
 const ref = args.includes("--ref") ? args[args.indexOf("--ref") + 1] : "main";
@@ -53,7 +53,7 @@ if (!existsSync(entry) || force) {
   mkdirSync(dirname(entry), { recursive: true });
   writeFileSync(
     entry,
-    `/* Liquid Glass Design System. Import this file right after @import "tailwindcss"; */\n@import "@fontsource-variable/inter";\n@import "./lg-tokens.css";\n@import "./lg-tailwind.css";\n@import "./lg-product.css";\n@import "./lg-scroll.css";\n`,
+    `/* UI Design Minimal. Import this file right after @import "tailwindcss"; */\n@import "@fontsource-variable/inter";\n@import "./lg-tokens.css";\n@import "./lg-tailwind.css";\n@import "./lg-product.css";\n@import "./lg-scroll.css";\n`,
   );
   written.push(join(src, "styles", "liquid-glass.css"));
 }
@@ -70,7 +70,7 @@ if (existsSync(pkgPath)) {
   }
 }
 
-console.log(`\nLiquid Glass Design System: ${written.length} written, ${skipped.length} kept (use --force to overwrite)`);
+console.log(`\nUI Design Minimal: ${written.length} written, ${skipped.length} kept (use --force to overwrite)`);
 for (const f of written) console.log(`  + ${f}`);
 for (const f of skipped) console.log(`  = ${f}`);
 console.log(`

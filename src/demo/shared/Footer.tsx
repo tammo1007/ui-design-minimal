@@ -8,7 +8,7 @@ export function SiteFooter() {
       <Container className="grid grid-cols-1 gap-10 md:grid-cols-12">
         <div className="md:col-span-5">
           <Logo />
-          <p className="mt-4 max-w-[34ch] text-small text-ink-2">An Apple-like Liquid Glass design system for landing pages and product UI. Open source, MIT.</p>
+          <p className="mt-4 max-w-[34ch] text-small text-ink-2">An Apple-like minimal design system with Liquid Glass controls for landing pages and product UI. Open source, MIT.</p>
         </div>
         <nav aria-label="Footer" className="grid grid-cols-2 gap-8 md:col-span-7 md:grid-cols-3">
           {[
